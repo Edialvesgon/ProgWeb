@@ -1,0 +1,30 @@
+body {
+    background-color: #efefef;
+}
+
+h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+p {
+    color: #666;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    color: #444;
+    font-family: 'Georgia', serif;
+    margin-top: 30px;
+}
