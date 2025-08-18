@@ -1,0 +1,51 @@
+* {
+    background-color: darkgrey;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+}
+
+h1 {
+    color: blue;
+}
+
+#hero {
+    display: flex;
+    background-color: burlywood;
+    align-content: center;
+
+}
+
+.lista {
+    font-size: 30px;
+    list-style: none;
+}
+
+li p {
+    font-style: normal;
+}
+
+li > p {
+    font-style: italic;
+    color: yellow;
+}
+
+
+.btn :hover {
+    background-color: aquamarine;
+}
+
+.box1{
+    display: fle;
+    background-color: green;
+    padding: 12px;
+
+
+    margin-bottom: 20px;
+}
+
+.boxlinner {
+    display: flex;
+    background-color: blueviolet;
+}
