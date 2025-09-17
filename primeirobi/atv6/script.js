@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   taskList.addEventListener("click", (event) => {
     if (event.target.tagName === "LI") {
-      event.target.remove(); // remove o <li> clicado
+      event.target.remove();  
     }
   });
 });
