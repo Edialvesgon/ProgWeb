@@ -1,7 +1,9 @@
+import style from './Footer.module.css'
+
 function Footer() {
   return (
-    <footer>
-      <button className="boxlinner">Voltar ao Início</button>
+    <footer className={style.footer}>
+      <button className={style.button}>Voltar ao Início</button>
     </footer>
   );
 }

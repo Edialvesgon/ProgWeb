@@ -1,6 +1,8 @@
+import style from './Aside.module.css'
+
 function Aside() {
   return (
-    <aside>
+    <aside className={style.aside}>
       <h3>Informações adicionais</h3>
       <p>Telefone, endereço ou promoções.</p>
       <p>

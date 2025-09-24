@@ -1,0 +1,14 @@
+.footer {
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: rgb(210, 169, 72);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+}
