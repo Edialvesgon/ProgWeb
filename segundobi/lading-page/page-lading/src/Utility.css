@@ -1,0 +1,89 @@
+.py-base {
+    padding-block: var(--py-base);
+}
+
+.py-lg {
+
+    /* padding block é o espaçamento vertical, ou seja, padding-top e padding-bottom */
+    padding-block: var(--py-lg);
+}
+
+.py-xl {
+    padding-block: var(--py-xl);
+}
+
+.px-lg {
+    /* padding inline é o espaçamento horizontal, ou seja, padding-left e padding-right */
+    padding-inline: var(--px-lg);
+}
+
+.desktop-only {
+    /* display none serve para esconder algo que só deve aparecer na versão desktop */
+    display: none;
+}
+
+.even-columns {
+    /* display grid é usado para criar um layout de grade com colunas de largura igual. */
+    display: grid;
+    /* gap é para espaçamento entre os itens do grid 16px */
+    gap: 1rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex {
+    /* displey flex serve para criar um layout flexível, onde os itens dentro do contêiner podem ser alinhados e distribuídos de maneira eficiente. */
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-1\.5 {
+    gap: 1.5rem;
+}
+
+.btn-wrapper {
+    cursor: pointer;
+    padding: 2px;
+}
+
+.container {
+    --max-width: 680px;
+
+    /* funcao min vai decidir o menor valor entre os dois valores que eu passar
+    100% - var(--px-lg) * 2 é para garantir que o container tenha um espaçamento horizontal adequado em relação às bordas da tela
+     e também para garantir que o container não ultrapasse a largura máxima definida pela variável --max-width  */
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+
+    /* margin-inline serve para centralizar o container horizontalmente na página dos dois lados, left e right centralizando no meio da tela  */
+    margin-inline: auto;
+
+    background-color: purple;
+}
+
+@media (width >=1280px) {
+    .container {
+        --max-width: 1050px;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
