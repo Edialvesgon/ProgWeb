@@ -70,7 +70,7 @@
     /* margin-inline serve para centralizar o container horizontalmente na página dos dois lados, left e right centralizando no meio da tela  */
     margin-inline: auto;
 
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 @media (width >=1280px) {
