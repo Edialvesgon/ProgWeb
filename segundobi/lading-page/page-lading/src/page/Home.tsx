@@ -6,6 +6,9 @@ import close from '../assets/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg'
 import menu from '../assets/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg'
 import { useState } from 'react'
 import Button from '../components/Button'
+import rectagleOne from '../assets/images/retanguloMaior.svg'
+import rectagleTwo from '../assets/images/retanguloMenor.svg'
+import "../styles/Hero.css"
 
 export default function Home(){
 
@@ -79,6 +82,45 @@ export default function Home(){
         
 </nav>  
             </header>
+            <section id="hero">
+                <span className="desktop-only">
+                    <img src={rectagleTwo} alt="Retangulo um tela inicial" />
+                </span>
+                <img src={rectagleOne} alt="Retangulo dois tela inicial" />
+                <div className="container content">
+                    <p className="desktop-only">
+                         Olá
+                    </p>
+                    <h1>Mais do que tratar dentes, transformamos autoestima.</h1>
+                    <p>Aqui, cada sorriso é tratado com atenção, tecnologia e carinho. Nosso objetivo é fazer você se sentir confiante, saudável e feliz ao se olhar no espelho</p>
+                
+                    <div className="flex gap-1">
+                
+                        <span><Button text="Cadastre-se" /></span>
+                
+                        <span className="desktop-only">
+                            <Button text="Veja mais" secondary />
+                        </span>
+                    </div>
+                </div>
+                {/* <div className="container content">
+                    <p className='desktop-only'>Olá</p>
+                    <span className="desktop-only">
+                        <img src={rectagleTwo} alt="Retangulo um tela inicial" />
+                    </span>
+                    <img src={rectagleOne} alt="Retangulo dois tela inicial" />
+                    <h1>Conheça a mehor dentista do mundo</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, repellat? Unde asperiores, quas repellat consectetur eum aperiam expedita sequi laboriosam incidunt, nulla libero magni quisquam veniam id aspernatur neque corporis.
+                    </p>
+                    <div className='flex gap-1'>
+                        <Button text='Cadastre-se'/>
+                        <span className="desktop-only">
+                            <Button text='veja mais' secondary/>
+                        </span>
+                    </div>
+                </div> */}
+            </section>
         </>
     )
 }
