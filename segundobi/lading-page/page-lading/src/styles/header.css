@@ -13,6 +13,20 @@
 .mobile-menu {
     display: initial;
     z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+
+    display: flex;
+}
+
+.close-icon {
+
+    position: absolute;
+    right: 85%;
+    margin-bottom: -22px;
 }
 
 .mobile-menu-content {
