@@ -3,6 +3,7 @@ import '../styles/Home.css'
 import '../styles/header.css'
 import '../styles/Solution.css'
 import '../styles/Pricing.css'
+import '../styles/Contact.css'
 import logo from '../assets/Untitled (2).svg'
 import close from '../assets/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg'
 import menu from '../assets/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg'
@@ -345,6 +346,29 @@ export default function Home() {
                         </ul>
                     </div>
                 </section>
+            </section>
+
+            <section id="contact">
+                <div className="contact-container">
+                    <p className="contact-subtitle">Envie sua dúvida</p>
+                    <h2 className="contact-title">Entre em contato</h2>
+                    <p className="contact-text">
+                        Entre em contato, estamos dispostos a tirar qualquer dúvida,
+                        seja um orçamento, uma dúvida técnica de algum de nossos produtos.
+                        Estamos à disposição para responder. 😎
+                    </p>
+
+                    <form className="contact-form">
+                        <input type="email" id="email" placeholder="Seu melhor Email" required />
+                        <input
+                            type="text"
+                            id="motivo"
+                            placeholder="Motivo do contato. Ex: Gostei muito do produto X, poderia me enviar um orçamento?"
+                            required
+                        />
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </section>
 
         </>
