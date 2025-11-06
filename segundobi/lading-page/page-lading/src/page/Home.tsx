@@ -12,6 +12,7 @@ import Button from '../components/Button'
 import rectagleOne from '../assets/images/retanguloMaior.svg'
 import rectagleTwo from '../assets/images/retanguloMenor.svg'
 import Card from '../components/Card'
+import check from '../assets/check.svg'
 import "../styles/Hero.css"
 import '../styles/Testimonials.css'
 
@@ -287,12 +288,12 @@ export default function Home() {
                         <h2>Grátis</h2>
                         <Button text="Pedir agora" secondary key="free" />
                         <span className="hr" /><span className="features">
-                            <img src={menu} alt="ícone check" width={24} height={24} />
+                            <img src={check} alt="ícone check" width={24} height={24} />
                             <p>Retire na loja</p>
                         </span>
                         <ul className="features">
                             <li>
-                                <img src={menu} alt="ícone check" width={24} height={24} />
+                                <img src={check} alt="ícone check" width={24} height={24} />
                                 <p>Apenas 1 por CPF</p>
                             </li>
                         </ul>
@@ -313,15 +314,15 @@ export default function Home() {
                         <Button text="Pedir agora" key="premium" />
                         <span className="hr" />
                         <span className="features">
-                            <img src={menu} alt="ícone check" width={24} height={24} />
+                            <img src={check} alt="ícone check" width={24} height={24} />
                             <p>2 Entregas</p>
                         </span>
                         <span className="features">
-                            <img src={menu} alt="ícone check" width={24} height={24} />
+                            <img src={check} alt="ícone check" width={24} height={24} />
                             <p>5 Refeições por semana</p>
                         </span>
                         <span className="features">
-                            <img src={menu} alt="ícone check" width={24} height={24} />
+                            <img src={check} alt="ícone check" width={24} height={24} />
                             <p>2 Sucos por semana</p>
                         </span>
                     </div>
@@ -335,12 +336,12 @@ export default function Home() {
                         <h2>Grátis</h2>
                         <Button text="Pedir agora" secondary key="free" />
                         <span className="hr" /><span className="features">
-                            <img src={menu} alt="ícone check" width={24} height={24} />
+                            <img src={check} alt="ícone check" width={24} height={24} />
                             <p>Retire na loja</p>
                         </span>
                         <ul className="features">
                             <li>
-                                <img src={menu} alt="ícone check" width={24} height={24} />
+                                <img src={check} alt="ícone check" width={24} height={24} />
                                 <p>Apenas 1 por CPF</p>
                             </li>
                         </ul>
@@ -348,10 +349,13 @@ export default function Home() {
                 </section>
             </section>
 
-            <section id="contact">
-                <div className="contact-container">
-                    <p className="contact-subtitle">Envie sua dúvida</p>
-                    <h2 className="contact-title">Entre em contato</h2>
+            <section id="contact" className='container'>
+                <header>
+                    <p className="desktop-only">Planos e preços</p>
+                    <h2>Nossos planos</h2>
+                </header>
+                <div >
+
                     <p className="contact-text">
                         Entre em contato, estamos dispostos a tirar qualquer dúvida,
                         seja um orçamento, uma dúvida técnica de algum de nossos produtos.
@@ -369,6 +373,11 @@ export default function Home() {
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
+                {/* <h1>valor do btc</h1>
+                {btcAmount &&
+                    <p>{btcAmount}
+                    </p>}
+                <button onClick={consultarBtc}>consutltar brc</button> */}
             </section>
 
         </>

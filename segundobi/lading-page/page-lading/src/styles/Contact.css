@@ -1,5 +1,25 @@
 /* ===== SEÇÃO DE CONTATO ===== */
+
 #contact {
+    display: flex;
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 2rem;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+
+        :first-child {
+            color: var(--primary-color);
+            font-weight: var(--fw-bold);
+        }
+    }
+}
+
+/* #contact {
     background: #fff;
     padding: 80px 20px 100px;
     font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
@@ -20,12 +40,12 @@
             font-weight: var(--fw-bold);
         }
     }
-}
+} */
 
-.contact-container {
+/* .contact-container {
     max-width: 750px;
     width: 100%;
-}
+} */
 
 /* Subtítulo pequeno azul */
 .contact-subtitle {
@@ -37,10 +57,10 @@
 
 /* Título principal */
 .contact-title {
-    font-size: 40px;
+    font-size: 2rem;
     color: #1a1a1a;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
 }
 
 /* Texto explicativo */
@@ -49,7 +69,8 @@
     color: #808080;
     line-height: 1.6;
     margin-bottom: 35px;
-    max-width: 620px;
+    /* max-width: 620px; */
+    max-width: 38rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -64,7 +85,7 @@
 
 .contact-form input {
     width: 100%;
-    max-width: 640px;
+    max-width: 40rem;
     padding: 14px 18px;
     border-radius: 8px;
     border: 1px solid #e6e6e6;
@@ -76,7 +97,7 @@
 }
 
 .contact-form input:focus {
-    border-color: #b3e0ff;
+    border-color: var(--primary-color);
     background-color: #fff;
     box-shadow: 0 0 6px rgba(19, 152, 230, 0.15);
 }
@@ -85,12 +106,12 @@
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    padding: 12px 1.8rem;
+    padding: 12px 30px;
     border-radius: 8px;
     font-weight: 600;
     font-size: 15px;
     cursor: pointer;
-    transition: all 40000ms ease;
+    transition: all 0.2s ease;
     box-shadow: 0 6px 14px rgba(19, 152, 230, 0.2);
 }
 
@@ -105,7 +126,7 @@
 }
 
 @media (max-width: 600px) {
-    .contact-title {
+    mm .contact-title {
         font-size: 32px;
     }
 
