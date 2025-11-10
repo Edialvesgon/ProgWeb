@@ -3,6 +3,7 @@ import '../styles/Home.css'
 import '../styles/header.css'
 import '../styles/Solution.css'
 import '../styles/Pricing.css'
+import '../styles/Rodape.css'
 import '../styles/Contact.css'
 import logo from '../assets/Untitled (2).svg'
 import close from '../assets/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg'
@@ -289,7 +290,9 @@ export default function Home() {
                         <Button text="Pedir agora" secondary key="free" />
                         <span className="hr" /><span className="features">
                             <img src={check} alt="ícone check" width={24} height={24} />
-                            <p>Retire na loja</p>
+                            <li>
+                                <p>Retire na loja</p>
+                            </li>
                         </span>
                         <ul className="features">
                             <li>
@@ -379,6 +382,40 @@ export default function Home() {
                     </p>}
                 <button onClick={consultarBtc}>consutltar brc</button> */}
             </section>
+
+            <footer id='rodape'>
+                <section>
+                    <span>
+                        <h1>Logo marca</h1>
+                        <p>aaa</p>
+                    </span>
+                    <span>
+                        <h1>empresa</h1>
+                        <p>osdif</p>
+                        <p>osdif</p>
+                        <p>osdif</p>
+
+                    </span>
+                    <span>
+                        <h1>funcionalidades</h1>
+                        <p>osdif</p>
+                        <p>osdif</p>
+                        <p>osdif</p>
+
+                    </span>
+                    <span>
+                        <h1>recursos</h1>
+                        <p>osdif</p>
+                        <p>osdif</p>
+                        <p>osdif</p>
+                        <p>osdif</p>
+                        <p>osdif</p>
+
+                    </span>
+
+                </section>
+            </footer>
+
 
         </>
     )

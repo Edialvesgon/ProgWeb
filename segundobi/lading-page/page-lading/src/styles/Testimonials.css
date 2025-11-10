@@ -1,5 +1,5 @@
 #testimonials {
-    height: 100vh;
+    /* height: 100vh; */
     background: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -94,17 +94,20 @@
         gap: 5rem;
         align-items: center;
 
+
         header p {
             width: 60%;
         }
 
         .carousel {
             overflow-x: hidden;
-            width: 50%;
+            width: 70%;
+            border-radius: 30px;
+
         }
 
         .testimony {
-            width: 80%;
+            width: 50%;
         }
 
         .carousel-card {
