@@ -21,6 +21,7 @@
         font-size: var(--fs-lg);
         font-weight: var(--fw-bold);
         padding-top: 3rem;
+        padding-block: 1rem;
 
 
     }
@@ -32,6 +33,21 @@
         color: var(--bg-color);
         font-weight: var(--fw-bold);
     }
+
+    .icone {
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        color: var(--bg-color);
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
 
 
 }
@@ -57,14 +73,33 @@
 
         h1 {
 
+
             padding-bottom: 0.7rem;
         }
 
         p {
+
             font-size: var(--fs-sm);
             font-weight: var(--fw-bold);
             color: var(--second-text-color);
 
         }
+
+
+        .icone {
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            color: var(--terceira-color);
+
+            .icon {
+                width: 2rem;
+                height: 3rem;
+            }
+        }
+
+
     }
 }

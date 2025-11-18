@@ -1,16 +1,16 @@
-import menu from '../assets/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg'
 import '../styles/Solution.css'
 
 interface CardProps {
     titulo: string;
     paragrafo: string;
+    award: string;
 }
 
-export default function Card({ titulo, paragrafo }: CardProps) {
+export default function Card({ titulo, paragrafo, award }: CardProps) {
     return (
         <div className="card">
             <span>
-                <img src={menu} alt="ícone campeão" width={64} height={64} />
+                <img src={award} alt="ícone campeão" width={64} height={64} />
             </span>
             <div>
                 <h3>

@@ -4,6 +4,6 @@ import './index.css'
 import Home from './page/Home'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Home/>
+    <Home />
   </StrictMode>,
 )
