@@ -72,6 +72,10 @@
         .names {
             font-size: var(--fs-sm);
             font-weight: var(--fw-bold);
+            display: flex;
+            flex-direction: column;
+
+
         }
 
         .names :first-child {

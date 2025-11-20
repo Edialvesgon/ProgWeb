@@ -48,6 +48,8 @@
         display: flex;
         min-height: 8rem;
         align-items: end;
+        padding: 2rem;
+
     }
 
     div {
@@ -55,7 +57,8 @@
         gap: 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: space-between;
+
     }
 }
 

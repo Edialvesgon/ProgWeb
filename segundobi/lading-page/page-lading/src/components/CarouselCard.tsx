@@ -1,29 +1,34 @@
 interface aa {
-    elon: string,
-    menu: string
+    imagem: string,
+    estrela: string,
+    texto: string,
+    nome: string,
+    cargo: string
 }
 
-export default function CarouselCard({ elon, menu }: aa) {
+export default function CarouselCard({ imagem, estrela, texto, nome, cargo }: aa) {
     return (
         <div className="carousel-content">
             <div className="carousel-card">
-                <img src={elon} alt="Imagem perfil cliente" />
+                <img src={imagem} alt="Imagem perfil cliente" />
                 <span className="testimony">
                     <p>
-                        Certamente o mercado chinês de eletricos está bombando, só existe
-                        uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço.
+                        {texto}
                     </p>
                 </span>
                 <span className="rating">
-                    <img src={menu} alt="ícone estrela" width={22} height={20} />
-                    <img src={menu} alt="ícone estrela" width={22} height={20} />
-                    <img src={menu} alt="ícone estrela" width={22} height={20} />
-                    <img src={menu} alt="ícone estrela" width={22} height={20} />
-                    <img src={menu} alt="ícone estrela sem fundo" width={20} height={22} />
+                    <img src={estrela} alt="ícone estrela" width={22} height={20} />
+                    <img src={estrela} alt="ícone estrela" width={22} height={20} />
+                    <img src={estrela} alt="ícone estrela" width={22} height={20} />
+                    <img src={estrela} alt="ícone estrela" width={22} height={20} />
+                    <img src={estrela} alt="ícone estrela sem fundo" width={20} height={22} />
                 </span>
                 <span className="names">
-                    <p>Ellon Ma</p>
-                    <p>CEO BING CHILLING</p>
+                    <p>{nome}</p>
+
+                    <p>
+                        {cargo}
+                    </p>
                 </span>
             </div>
 

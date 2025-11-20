@@ -211,9 +211,9 @@ export default function Home() {
                     </p>
                 </header>
                 <section className="even-columns">
-                    <Card titulo='Produto Vencedor' paragrafo='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, excepturi dolorem. Nisi dolores ipsam natus fugit accusamus sed minima, dolore autem enim unde nam iusto non. Architecto inventore sunt maiores!' award={award} />
-                    <Card titulo='Produto Vencedor' paragrafo='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, excepturi dolorem. Nisi dolores ipsam natus fugit accusamus sed minima, dolore autem enim unde nam iusto non. Architecto inventore sunt maiores!' award={award} />
-                    <Card titulo='Produto Vencedor' paragrafo='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, excepturi dolorem. Nisi dolores ipsam natus fugit accusamus sed minima, dolore autem enim unde nam iusto non. Architecto inventore sunt maiores!' award={award} />
+                    <Card titulo='Sorriso Saudável e Completo' paragrafo=' Realizamos seu tratamento odontológico com excelência e conforto, focando na saúde bucal completa para um sorriso que te representa. Agende sua consulta.' award={award} />
+                    <Card titulo='Sorriso Duradouro' paragrafo='Prevenir é a chave para um sorriso duradouro. Oferecemos o que há de melhor em cuidados preventivos e restaurações para sua tranquilidade.' award={award} />
+                    <Card titulo='Cuidado Preventivo' paragrafo='Utilizamos tecnologia de ponta em todos os procedimentos para garantir o melhor resultado, com tratamentos personalizados para sua saúde e bem-estar.' award={award} />
 
                     {/* <div className="card">
                         <span>
@@ -258,16 +258,15 @@ export default function Home() {
                         <h2>Cada cliente importa!</h2>
                     </span>
                     <p>
-                        Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
-                        comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                        Transforme seu sorriso e eleve sua autoestima com nossos tratamentos estéticos. Invista em você e na confiança de sorrir sem reservas.
                     </p>
                 </header>
 
                 <section className='carousel'>
-                    <CarouselCard elon={elon} menu={vector} />
-                    <CarouselCard elon={ryan} menu={vector} />
-                    <CarouselCard elon={elon} menu={vector} />
-                    <CarouselCard elon={ryan} menu={vector} />
+                    <CarouselCard cargo='Analista' nome='Edilson' imagem={elon} estrela={vector} texto='O medo de ir ao dentista ficou no passado. O atendimento é espetacular, o time é atencioso e o resultado do meu clareamento ficou incrível. Agora, tenho confiança total para sorrir.' />
+                    <CarouselCard cargo='Programador' nome='Elon' imagem={ryan} estrela={vector} texto='Certamente a qualidade dos materiais e o profissionalismo fazem toda a diferença. Minhas restaurações ficaram perfeitas e sinto minha saúde bucal muito mais protegida. Recomendo de olhos fechados!' />
+                    <CarouselCard cargo='Exercito' nome='Cesar' imagem={elon} estrela={vector} texto='Eu estava receoso com o tratamento de implante, mas a tecnologia utilizada aqui me deu muita segurança. Foi rápido, indolor e o resultado superou minhas expectativas. Estou mastigando sem problemas!' />
+                    <CarouselCard cargo='Gurgacz' nome='Robsu' imagem={ryan} estrela={vector} texto='Fiz meu tratamento ortodôntico e a transformação do meu sorriso foi além do que imaginei! A equipe me acompanhou em cada etapa. É um investimento na minha aparência e no meu bem-estar!' />
 
                 </section>
                 {/* <section className="carousel">
@@ -362,66 +361,66 @@ export default function Home() {
                     <div className="pricing-card">
                         <span className="plan">
                             <h3>Básico</h3>
-                            <p>Você tem direito a uma prova das comidas DonaFrost.</p>
+                            <p>Você terá direito a uma avaliação completa da sua saúde bucal..</p>
                         </span>
                         <h2>Grátis</h2>
-                        <Button text="Pedir agora" secondary key="free" />
+                        <Button text="Agendar Agora (ou Fazer Minha Avaliação)" secondary key="free" />
                         <span className="hr" /><span className="features">
                             <img src={check} alt="ícone check" width={24} height={24} />
-                            <p>Retire na loja</p>
+                            <p>Consulta de Triagem</p>
                         </span>
                         <ul className="features">
                             <li>
                                 <img src={check} alt="ícone check" width={24} height={24} />
-                                <p>Apenas 1 por CPF</p>
+                                <p>Diagnóstico e Planejamento Inicial</p>
                             </li>
                         </ul>
                     </div>
 
                     <div className="pricing-card premium">
                         <span className="bonus">
-                            <p>1º MÊS COM DESCONTO</p>
+                            <p>Plano Completo</p>
                         </span>
                         <span className="plan">
                             <h3>Premium</h3>
-                            <p>Para quem precisa de uma marmita diária, muito saborosa.</p>
+                            <p>Para quem precisa de um sorriso novo e confiante, com tratamentos essenciais inclusos.</p>
                         </span>
                         <span className="price">
-                            <h2>R$ 89,90</h2>
+                            <h2>R$ 399,00 /mês</h2>
                             <p>/mês</p>
                         </span>
-                        <Button text="Pedir agora" key="premium" />
+                        <Button text="Contratar Plano (ou Começar Tratamento)" key="premium" />
                         <span className="hr" />
                         <span className="features">
                             <img src={check} alt="ícone check" width={24} height={24} />
-                            <p>2 Entregas</p>
+                            <p>2 Limpezas e Profilaxias/Ano</p>
                         </span>
                         <span className="features">
                             <img src={check} alt="ícone check" width={24} height={24} />
-                            <p>5 Refeições por semana</p>
+                            <p>Consulta de Emergência (Incluída)</p>
                         </span>
                         <span className="features">
                             <img src={check} alt="ícone check" width={24} height={24} />
-                            <p>2 Sucos por semana</p>
+                            <p>Clareamento Personalizado (Desconto)</p>
                         </span>
                     </div>
 
 
                     <div className="pricing-card">
                         <span className="plan">
-                            <h3>Básico</h3>
-                            <p>Você tem direito a uma prova das comidas DonaFrost.</p>
+                            <h3>Plano Prevenção</h3>
+                            <p>Você terá direito a um pacote de cuidados focado na manutenção do seu sorriso.</p>
                         </span>
                         <h2>Grátis</h2>
-                        <Button text="Pedir agora" secondary key="free" />
+                        <Button text="Ver Detalhes" secondary key="free" />
                         <span className="hr" /><span className="features">
                             <img src={check} alt="ícone check" width={24} height={24} />
-                            <p>Retire na loja</p>
+                            <p>Revisão Semestral</p>
                         </span>
                         <ul className="features">
                             <li>
                                 <img src={check} alt="ícone check" width={24} height={24} />
-                                <p>Apenas 1 por CPF</p>
+                                <p>Orientação de Higiene</p>
                             </li>
                         </ul>
                     </div>
